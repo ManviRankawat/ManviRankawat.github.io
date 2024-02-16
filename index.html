@@ -138,9 +138,22 @@
         <header class="major last">
           <h2>Professional profile</h2>
         </header>
-        <ul class="actions special">
-          <li><a href="#" class="button">Resume</a></li>
+         <ul class="actions special">
+          <li><a href="images/Manvi Rankawat- NewResume.pdf"
+
+              class="button" id="pdfButton">Resume</a></li>
         </ul>
+        <script>
+document.getElementById('pdfButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default action (i.e., following the link)
+
+    // Get the PDF document URL from the href attribute
+    var pdfUrl = this.getAttribute('href');
+
+    // Open the PDF document in a new tab/window
+    window.open(pdfUrl, '_blank');
+});
+</script>
         <form method="post" action="#">
           <div class="row">
             <div class="col-6 col-12-mobilep"> <input name="name" placeholder="Name"
